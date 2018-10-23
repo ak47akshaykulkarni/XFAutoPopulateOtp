@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="XFOtpReader.Controls.OtpEntryControl"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:behaviors="clr-namespace:XFOtpReader.Behaviors;assembly=XFOtpReader">
+    <ContentView.Content>
+        <StackLayout HorizontalOptions="Center">
+            <Grid HorizontalOptions="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Entry
+                    x:Name="EntryOne"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    BackgroundColor="White"
+                    ClassId="1"
+                    Keyboard="Numeric"
+                    Placeholder="-"
+                    PlaceholderColor="Gray"
+                    Text="{Binding OtpText}"
+                    TextColor="Chocolate">
+                    <Entry.Behaviors>
+                        <behaviors:OtpEntryBehavior />
+                    </Entry.Behaviors>
+
+                </Entry>
+                <Entry
+                    x:Name="EntryTwo"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    BackgroundColor="White"
+                    ClassId="2"
+                    Keyboard="Numeric"
+                    Placeholder="-"
+                    PlaceholderColor="Gray"
+                    Text="{Binding OtpText}"
+                    TextColor="Chocolate">
+                    <Entry.Behaviors>
+                        <behaviors:OtpEntryBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+                <Entry
+                    x:Name="EntryThree"
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    AutomationId="EntryThree"
+                    BackgroundColor="White"
+                    ClassId="3"
+                    Keyboard="Numeric"
+                    Placeholder="-"
+                    PlaceholderColor="Gray"
+                    Text="{Binding OtpText}"
+                    TextColor="Chocolate">
+                    <Entry.Behaviors>
+                        <behaviors:OtpEntryBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+                <Entry
+                    x:Name="EntryFour"
+                    Grid.Row="0"
+                    Grid.Column="3"
+                    BackgroundColor="White"
+                    ClassId="4"
+                    Keyboard="Numeric"
+                    Placeholder="-"
+                    PlaceholderColor="Gray"
+                    Text="{Binding OtpText}"
+                    TextColor="Chocolate">
+                    <Entry.Behaviors>
+                        <behaviors:OtpEntryBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+            </Grid>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>
