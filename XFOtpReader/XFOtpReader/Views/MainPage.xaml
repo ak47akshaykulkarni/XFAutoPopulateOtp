@@ -6,12 +6,14 @@
     xmlns:controls="clr-namespace:XFOtpReader.Controls;assembly=XFOtpReader"
     Title="{Binding Title}"
     BackgroundColor="CornflowerBlue">
-    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+    <StackLayout
+        HorizontalOptions="CenterAndExpand"
+        Spacing="20"
+        VerticalOptions="CenterAndExpand">
         <Label
             FontSize="Large"
             Text="Enter OTP!"
             TextColor="White" />
         <controls:OtpEntryControl />
     </StackLayout>
-
 </ContentPage>
